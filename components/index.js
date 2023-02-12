@@ -1,0 +1,6 @@
+export {default as Member} from './Member/Member'
+export {default as News} from './News/News'
+export {default as Service} from './Service/Service'
+export {default as Title} from './Title/Title'
+export {default as Work} from './Work/Work'
+export {default as Slider} from './Slider/Slider'
