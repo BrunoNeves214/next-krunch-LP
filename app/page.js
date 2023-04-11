@@ -1,4 +1,14 @@
-import {Header, About, Testimonials, Services,Team, Blog, Contact, Footer, Portfolio} from '../containers'
+import {
+  Header,
+  About,
+  Testimonials,
+  Services,
+  Team,
+  Blog,
+  Contact,
+  Footer,
+  Portfolio,
+} from "../containers";
 
 export default function Home() {
   return (
@@ -13,5 +23,5 @@ export default function Home() {
       <Contact />
       <Footer />
     </main>
-  )
+  );
 }

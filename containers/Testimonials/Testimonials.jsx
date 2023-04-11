@@ -61,9 +61,7 @@ const Testimonials = () => {
       <div className="border-b-2 border-solid border-white -mt-[15px] w-16"></div>
 
       {/* text slider */}
-      <div className="px-32">
-        <p className="text-[1px]">{sliderText[currentIndex].p}</p>
-      </div>
+      <div>{sliderText[currentIndex].p}</div>
 
       {/* left/right arrows */}
       <div className="absolute top-0 flex justify-between items-end sm:items-center w-full h-full px-5 lg:px-10 xl:px-28 pb-5 sm:pb-auto">

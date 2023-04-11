@@ -9,7 +9,7 @@
   scroll-behavior: smooth;
 }
 
-button{
+button {
   border: 1px solid;
   padding: 0.5rem 1.5rem;
   border-radius: 10px;
@@ -20,39 +20,49 @@ button{
 }
 
 /* header bg image */
-.header{
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../public/hero-bg.jpg);
+.header {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.75)
+    ),
+    url(../public/hero-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 /* portofolio cases hover effect */
-.work-img:hover p{
+.work-img:hover p {
   opacity: 1;
   top: 0;
 }
 
 /* testimonials bg image */
-.testimonials{
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../public/testimonial-bg.jpg);
+.testimonials {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.75)
+    ),
+    url(../public/testimonial-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 /* team cases hover effect */
-.team-social:hover p{
+.team-social:hover p {
   opacity: 1;
   top: 0;
 }
 
-input{
+input {
   border: 2px solid rgba(128, 128, 128, 0.5);
   padding: 10px;
   border-radius: 3px;
   outline: none;
 }
 
-textarea{
+textarea {
   border: 2px solid rgba(128, 128, 128, 0.5);
   border-radius: 3px;
   outline: none;
