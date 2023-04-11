@@ -1,30 +1,17 @@
 "use client";
+import NavbarLink from "@/components/NavbarLink/NavbarLink";
 import { useState } from "react";
 import { TfiMenu, TfiClose, TfiAngleDown } from "react-icons/tfi";
 
 const Menu = () => (
   <>
-    <li className="text-[1.2rem] font-bold hover:text-blue-500 transition-all">
-      <a href="#home">Home</a>
-    </li>
-    <li className="text-[1.2rem] font-bold hover:text-blue-500 transition-all">
-      <a href="#about">About</a>
-    </li>
-    <li className="text-[1.2rem] font-bold hover:text-blue-500 transition-all">
-      <a href="#portfolio">Portfolio</a>
-    </li>
-    <li className="text-[1.2rem] font-bold hover:text-blue-500 transition-all">
-      <a href="#services">Services</a>
-    </li>
-    <li className="text-[1.2rem] font-bold hover:text-blue-500 transition-all">
-      <a href="#team">Team</a>
-    </li>
-    <li className="text-[1.2rem] font-bold hover:text-blue-500 transition-all">
-      <a href="#blog">Blog</a>
-    </li>
-    <li className="text-[1.2rem] font-bold hover:text-blue-500 transition-all">
-      <a href="#contact">Contact</a>
-    </li>
+    <NavbarLink href="home" link="Home" />
+    <NavbarLink href="about" link="About" />
+    <NavbarLink href="portfolio" link="Portfolio" />
+    <NavbarLink href="services" link="Services" />
+    <NavbarLink href="team" link="Team" />
+    <NavbarLink href="blog" link="Blog" />
+    <NavbarLink href="contact" link="Contact" />
   </>
 );
 
@@ -50,18 +37,26 @@ const Header = () => {
               <TfiClose
                 size={"2rem"}
                 onClick={() => setToggle(false)}
-                className="bg-neutral-800 p-1"
+                className="bg-neutral-800 p-1 cursor-pointer"
               />
             ) : (
-              <TfiMenu size={"2rem"} onClick={() => setToggle(true)} />
+              <TfiMenu
+                size={"2rem"}
+                onClick={() => setToggle(true)}
+                className="cursor-pointer"
+              />
             )}
-            {toggle && (
-              <div className="absolute top-10 right-0 p-10 bg-neutral-800">
-                <ul className="gap-10 flex flex-col items-start w-72">
-                  <Menu />
-                </ul>
-              </div>
-            )}
+          </div>
+          <div
+            className={
+              toggle
+                ? "absolute top-[75px] left-0 p-10 bg-neutral-800 w-full ease-in duration-300 opacity-100"
+                : "absolute top-[75px] left-[-100%] p-10 bg-neutral-800 w-full ease-in duration-300 opacity-0"
+            }
+          >
+            <ul className="gap-10 flex flex-col items-center">
+              <Menu />
+            </ul>
           </div>
         </nav>
 
